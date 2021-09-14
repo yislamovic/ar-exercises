@@ -6,3 +6,9 @@ puts "Exercise 3"
 puts "----------"
 
 # Your code goes here ...
+@store3 = Store.third()
+@store3.destroy
+puts "Count of stores: #{Store.count()}"
+Store.all.to_a.each do |store|
+  puts store.name
+end
